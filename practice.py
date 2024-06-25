@@ -14,11 +14,25 @@
 # else:
 #     print("Enter valid number")
 
-def factorial(n):
-    if (n==1 or n==0):
-        return 1
-    return n* factorial(n-1)
+# def factorial(n):
+#     if (n==1 or n==0):
+#         return 1
+#     return n* factorial(n-1)
 
 
-n =int(input("Enter a number to find it's factorial : "))
-print (f"The Factorial of {n} is  {factorial(n)}")
+# n =int(input("Enter a number to find it's factorial : "))
+# print (f"The Factorial of {n} is  {factorial(n)}")
+
+
+def greatestNum( a,b,c):
+    if (a>b and a>c):
+        return a
+    elif (b>a and b>c):
+        return b 
+    elif (c>a and c>b):
+        return c
+
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+c = int(input("Enter c: "))
+print(f"{greatestNum(a,b,c)} is the greatest number")
