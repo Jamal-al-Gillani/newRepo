@@ -1,6 +1,6 @@
 import random
 
-
+# This is a Snake , Water and Gun game.
 computer = random.choice([1,0,-1])
 youString = input("Enter your choice : ")
 youDict = {"s": 1,"w": -1, "g": 0}
